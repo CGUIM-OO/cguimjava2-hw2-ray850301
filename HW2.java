@@ -6,6 +6,10 @@ import java.util.Scanner;
  * @author TODO: please add student ID and name here
  * 					資管四乙	B0344209          蕭瑞文
  * Try to write some comments for your codes (methods, 15 points)
+ * Card 每張卡片會有一種花色(♣、♦、♥、♠)跟一個點數(1~13)
+ * printCard 用來印出每一張Card
+ * Deck 就是每副牌 須放入52張 Card (共4種花色*13個點數)
+ * printDeck 依據輸入N副牌 會執行N次  每次印出一整副Deck
  */
 public class HW2 {
 
@@ -74,7 +78,7 @@ class Deck{
 		cards=new ArrayList<Card>();
 		//1 Deck have 52 cards, https://en.wikipedia.org/wiki/Poker
 		//Hint: Use new Card(x,y) and 3 for loops to add card into deck
-		for(int n=0; n<nDeck; n++) {						// 有N副牌
+		for(int n=0; n<nDeck; n++) {						// 有 N副牌
 			for(int i=1; i<=4; i++) {						// Definition: 1~4, Clubs=1, Diamonds=2, Hearts=3, Spades=4
 				for(int j=1; j<=13; j++){					// 1~13
 					Card card=new Card(i,j);	
